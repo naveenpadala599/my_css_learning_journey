@@ -1,0 +1,19 @@
+/* Universal selector*/
+*{
+  margin: 2.5px;
+  padding: 2.5px;
+  box-sizing: border-box;
+}
+/*Root variable*/
+:root{
+   --main-color: #6c63ff;
+   --accent: #ff6584;
+   --bg: #0f172a;
+   --text: white;
+}
+body{
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
