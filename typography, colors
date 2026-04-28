@@ -1,0 +1,30 @@
+/*Universal selector*/
+*{
+  margin: 2px;
+  padding: 2px;
+  border: 0px dashed white;
+  box-sizing: border-box;
+}
+/*Root variables*/
+:root{
+  --main-color: #6c63ff;
+  --accent: #ff6584;
+  --bg: #0f1756;
+  --text: white; 
+}
+body{
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+h1{
+ text-align: center;
+ letter-spacing: 4px;
+ text-transform: uppercase;
+ text-shadow: -2px -2px 5px green;
+}
+h2{
+ margin: 40px;
+ color: var(--accent);
+}        
