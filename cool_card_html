@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <title>Cool Card</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+     <h1>Future Dev 🚀</h1>
+     <p>Learning. Building. Becoming Unstoppable.</p>
+     <button>Enter the future</button>
+    </div>
+  </body>
+</html>  
