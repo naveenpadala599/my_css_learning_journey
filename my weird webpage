@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Floating Neon Badge</title>
+
+<style>
+ /*Page Background*/
+ body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #0f172a,#020617);
+  font-family: Segoe UI, sans-serif;
+  }
+  /*Floating-animation*/
+  @keyframes float{
+   0%{transform: translateY(0px);}
+   50%{transform: translateY(-15px);}
+   100%{transform: translateY(0px);}
+  }
+  /*Card*/
+  .badge{
+  color: white;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  padding: 40px 60px;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 25px rgba(0, 255, 255,0.2);
+  animation: float 4s ease-in-out infinite;
+  transition: 0.4s;
+  }
+  .badge:hover{
+   box-shadow: 0 0 45px rgba(0, 255, 255, 0.7);
+   transform:scale(1.05);
+  }
+  /*Avatar circle*/
+  .avatar{
+  background: linear-gradient(45deg,#00f5ff,#7c3aed);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px cyan;
+  }
+  h2{
+  margin: 10px 0 5px;
+  }
+  p{
+  opacity: 0.7;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 3s;
+  }
+  p:hover{
+   transform: scale(3) rotate(360000000000deg);
+   text-shadow: 0 0 10px cyan;
+  }
+  /*Social icons*/
+  .socials span{
+   display: inline-block;
+   font-size: 22px;
+   margin: 0 10px;
+   cursor: pointer;
+   transition: 3s;
+  }
+  .socials span:hover{
+   transform: scale(10) rotate(311111111160deg); 
+   text-shadow: 0 0 10px cyan;
+   
+  }
+  
+</style>
+
+</head>
+<body>
+
+<div class="badge">
+  <div class="avatar">N</div>
+  <h2>Naveen</h2>
+  <p>Python • AI • Future Freelancer</p>
+  <div class="socials">
+    <span>⚡</span>
+    <span>💻</span>
+    <span>🚀</span>
+  </div>
+</div>
+
+</body>
+</html>
