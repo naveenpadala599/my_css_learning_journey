@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>CSS Display Property Showcase</title>
+  <style>
+     
+  </style>
+ </head>
+ <body>
+  <h1>CSS DISPLAY SUPERPOWERS ⚡ </h1> 
+  <section class="block-demo">
+  <h2>display: block</h2>
+  <p class="desc">Stacks vertically. Takes full width. Create page sections.</p>
+  <div class="box">Block 1</div>
+  <div class="box">Block 2</div>
+  <div class="box">Block 3</div>
+  </section>
+  <section class="inline-demo">
+  <h2>display: inline</h2>
+  <p class="desc">Behaves like text. Stays on the same line. Cannot set width/height.</p>
+  <div class="box">Inline</div>
+  <div class="box">Inline</div>
+  <div class="box">Inline</div>
+  <p style="margin-top:10px;">They flow like words in a sentence.</p>
+  </section>
+ </body>
+</html>
