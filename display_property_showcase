@@ -24,5 +24,58 @@
   <div class="box">Inline</div>
   <p style="margin-top:10px;">They flow like words in a sentence.</p>
   </section>
+  <section class="inline-block-demo">
+  <h2>display: inline block</h2>
+  <p class="desc">Hybrid mode. Stayes in line but can have width and height.</p>
+  <div class="box">Box</div>
+  <div class="box">Box</div>
+  <div class="box">Box</div>
+  <div class="box">Box</div>
+  </section>
+  <section>
+  <h2>display: flex(row layout)</h2>
+  <p class="desc">1D layout engine. Align, center, space items easily</p>
+  <div class="flex-demo">
+  <div class="box">1</div>  
+  <div class="box">2</div>  
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  </div>
+  </section>
+  <section>
+  <h2>display: flex(column layout)</h2>
+  <p class="desc">Flex can also stack items vertically with perfect spacing.</p>
+  <div class="flex-column">
+  <div class="box">A</div>  
+  <div class="box">B</div>  
+  <div class="box">C</div>  
+  </div>
+  </section>
+  <section>
+  <h2>display: grid</h2> 
+  <p class="desc">2D layout powerhouse. Rows + Columns at the same time.</p>
+  <div class="grid-demo">
+  <div class="box">1</div>  
+  <div class="box">2</div>  
+  <div class="box">3</div>  
+  <div class="box">4</div>  
+  <div class="box">5</div>  
+  <div class="box">6</div>  
+  <div class="box">7</div>  
+  <div class="box">8</div>  
+  </div>
+  </section>
+  <section>
+  <h2>Creative Grid Layout</h2>
+  <p class="desc">Grid can create magzine/ dashboard style layouts.</p>
+  <div class="grid-art">
+  <div class="box big">Big</div>
+  <div class="box">Side</div>
+  <div class="box">Side</div>
+
+  </div>
+  </section>
+  <footer>Pure HTML and CSS no JavaScript.....yet...</footer>
+   
  </body>
 </html>
