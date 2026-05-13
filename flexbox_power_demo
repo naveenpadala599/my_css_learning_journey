@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Flexbox Power Demo</title>
+  <style>
+    
+  </style>
+ </head>
+ <body>
+  <h1>⚡ FLEXBOX SUPERPOWERS ⚡ </h1>
+  <section>
+   <h2>1️⃣ Simple Row</h2>
+   <div class="demo row">
+    <div class="box">1</div>
+    <div class="box">2</div> 
+    <div class="box">3</div> 
+   </div>
+  </section>
+  <section>
+   <h2>2️⃣ Perfect Centring (The Magic)</h2>
+   <div class="demo center">
+    <div class="box">I am perfectly centered 😎</div>
+   </div>
+  </section>
+  <section>
+   <h2>3️⃣ Space Between</h2>
+   <div class="demo space">
+    <div class="box">Left</div>
+    <div class="box">Right</div>
+   </div>
+  </section> 
+  <section>
+   <h2>4️⃣ Flex Grow (Middle Expands)</h2>
+   <div class="demo grow">
+    <div class="box">Small</div> 
+    <div class="box">I Grow</div> 
+    <div class="box">Small</div> 
+   </div>
+  </section>
+ </body>
+</html>
