@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flex Alignment Demo</title>
+
+<style>
+ body{
+   font-family: Arial;
+   background: #0f172a;
+   color: white;
+   padding: 30px;
+  }
+ h1{
+   text-align: center;
+   margin-bottom: 30px;
+  } 
+ .demo{
+   height: 220px;
+   border: 2px dashed #475569;
+   margin-bottom: 30px;
+   padding: 15px;
+   display: flex;
+   gap: 10px;
+  } 
+  .box{
+   background: #22c55e;
+   padding: 20px;
+   border-radius: 12px;
+   font-weight: bold;
+  }
+  .start{
+   justify-content: flex-start;
+  }
+  .center{
+   justify-content: center;
+  }
+  .end{
+   justify-content: flex-end;
+  }
+  .between{
+   justify-content: space-between;
+  }
+  .around{
+   justify-content: space-around;
+  }
+  .evenly{
+   justify-content: space-evenly;
+  }
+  
+  
+  
+  .top{
+   align-items: flex-start;
+  }
+  .middle{ 
+   align-items: center;
+  }
+  .bottom{ 
+   align-items: flex-end;
+  }
+  .perfect{
+   justify-content: center;
+   align-items: center;
+  }
+  
+  
+</style>
+</head>
+
+<body>
+
+<h1>🎯 JUSTIFY vs ALIGN VISUAL GUIDE</h1>
+
+<h2>justify-content → moves LEFT ↔ RIGHT</h2>
+
+<div class="demo start">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo center">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo end">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo between">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo around">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo evenly">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+
+<h2>align-items → moves UP ↕ DOWN</h2>
+
+<div class="demo top">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo middle">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<div class="demo bottom">
+  <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+</div>
+
+<h2>🔥 Both Together = Perfect Center</h2>
+
+<div class="demo perfect">
+  <div class="box">I am perfectly centered 😎</div>
+</div>
+
+</body>
+</html>
