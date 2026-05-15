@@ -55,7 +55,15 @@
     }
     .grow .box:nth-child(2){
      flex:2
-    } 
+    }
+    .wrap{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+    }
+    .wrap .box{
+     flex: 1 1 150px;
+    }
   </style>
  </head>
  <body>
@@ -89,5 +97,32 @@
     <div class="box">Small</div> 
    </div>
   </section>
+  <section>
+  <h2>5️⃣ Resoponsive Wrapping</h2> 
+  <div class="demo wrap">
+   <div class="box">1</div>
+   <div class="box">2</div>
+   <div class="box">3</div>
+   <div class="box">4</div>
+   <div class="box">5</div>
+   <div class="box">6</div>
+  </div>
+  </section>
+  <section>
+  <h2>6️⃣ Reordering Without Changing HTML</h2>
+  <div class="demo order">
+   <div class="box first">HTML First</div> 
+   <div class="box second">HTML Second</div>  
+   <div class="box third">HTML Third</div>  
+  </div>
+  </section>
+  <section>
+   <h2>7️⃣ Real Navbar Layout</h2>
+   <div class="navbar">
+    <div>LOGO</div>
+    <div class="nav-links">
+     <div>Home</div> 
+     <div>About</div> 
+     <div>Contact</div>
  </body>
 </html>
