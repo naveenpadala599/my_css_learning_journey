@@ -64,6 +64,42 @@
     .wrap .box{
      flex: 1 1 150px;
     }
+    .order{
+     display: flex;
+     gap: 10px;
+    }
+    .order .first{ order:3; background: #f43f5e;}
+    .order .second{ order:1; background:#3b82f6;}
+    .order .third{ order:2; background:#eab308;}
+    .navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     background:#1e293b;
+     padding: 15px 20px;
+     border-radius: 10px;
+    }
+    .nav-links{
+     display: flex;
+     gap: 20px;
+    }
+    .nav-links div{
+     cursor:pointer;
+     transition:.9s;
+    }
+    .nav-links div:hover{
+     color:#22c55e;
+    }
+    .cards{
+     display: flex;
+     gap:20px;
+    }
+    .card{
+     flex:1;
+     background:#1e293b;
+     padding:20px;
+     border-radius: 12px;
+    }
   </style>
  </head>
  <body>
