@@ -160,5 +160,17 @@
      <div>Home</div> 
      <div>About</div> 
      <div>Contact</div>
+      </div>
+    </div>
+  </section> 
+   
+  <section>
+  <h2>8️⃣ Card Layout</h2>
+  <div class="cards">
+    <div class="card">Card 1 content</div>
+    <div class="card">Card 2 content</div>
+    <div class="card">Card 3 content</div> 
+    </div>
+  </section>
  </body>
 </html>
