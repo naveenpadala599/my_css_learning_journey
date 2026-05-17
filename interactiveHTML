@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ultimate Interactive Elements Demo</title>
+   <style>
+     
+   </style>
+   
+  </head>
+  <body>
+   <div class="container">
+   <h1>🔥 Interatve HTML Playground</h1>
+   <div class="card">
+   <h2>Form Elements</h2>
+     
+   <label>Name</label>
+   <input type="text" placeholder="Enter name">
+     
+   <label>Password</label>
+   <input type="password" placeholder="Password">
+     
+   <label>Date</label>
+   <input type="date">
+     
+   <label>Color Picker</label>
+   <input type="color">
+     
+   <label>Upload File</label>
+   <input type="file">
+     
+   <label>Textarea</label>
+   <textarea rows="4"></textarea>
+     
+   <label>Dropdown</label>
+   <select>
+    <option>Option 1</option>
+    <option>Option 2</option> 
+    <option>Option 3</option> 
+   </select>
+   </div>
+
+   
+   <div class="card">
+   <h2>Radio & Checkbox</h2>
+   
+   <p>Gender:</p>
+   <input type="radio" name="g">Male
+   <input type="radio" name="g">Female
+   
+   <br><br>
+     
+   <input type="checkbox"> Subscribe to newsletter
+     
+   </div>
+   <div class="card">
+   <h2>Buttons</h2>
+   <button class="btn primary">Primary</button>
+   <button class="btn success">Success</button>
+   <button class="btn danger">Danger</button>
+   </div>
+   <div class="card">
+   <h2>Toggle Switch</h2>
+   <label class="switch">
+   <input type="checkbox">
+   <span class="slider"></span>
+   </label>
+   </div>
+   
+   <div class="card">
+   <h2>Range & Progress</h2>
+   <input type="range">
+   <br><br>
+   <progress value="60" max="100"></progress>
+   </div>
+   
+   <><>
+   </div>   
+  </body>
+</html>  
