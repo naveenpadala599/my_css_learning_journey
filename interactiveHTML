@@ -75,7 +75,38 @@
    <progress value="60" max="100"></progress>
    </div>
    
-   <><>
+   <div class="card">
+    <h2>Accordion</h2>
+    <details>
+    <summary>Click to expand</summary>
+    <p>This is hidden content 😄</p>
+    </details>
+   </div>
+     
+   <div class="card">
+   <h2>Audio Player</h2>
+   <audio controls>
+   <source src="https://www.w3schools.com/horse.mp3">  
+   </audio>
+   </div>
+   <div class="card">
+   <h2>Video Player</h2>
+   <video width="100%" controls>
+   <source src="https://www.w3schools.com/html/mov_bbb.mp4">  
+   </video>
+   </div>
+   <div class="card">
+   <h2>PDF Viewer</h2>
+   <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"></iframe>
+   </div>
+   <div class="card">
+   <h2>Table</h2>
+   <table>
+   <tr><th>Name</th><th>Age</th></tr>
+   <tr><td>John</td><td>25</td></tr>
+   <tr><td>Jane</td><td>28</td></tr>
+   </table>
+   </div>
    </div>   
   </body>
 </html>  
