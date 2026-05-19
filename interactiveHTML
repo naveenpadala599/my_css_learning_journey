@@ -5,7 +5,85 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Ultimate Interactive Elements Demo</title>
    <style>
-     
+        *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family:Segoe UI, sans-serif;
+     } 
+     body{
+     background:linear-gradient(120deg,#0f172a,#020617);
+     color:white;
+     padding:40px;
+     }
+     .container
+     {
+     max-width:1100px;
+     margin:auto;
+     }
+     h1{
+     text-align:center;
+     margin-bottom:30px;
+     font-size:40px;
+     }
+     .card{
+     background:#111827;
+     padding:25px;
+     margin-bottom:25px;
+     border-radius:16px;
+     box-shadow:0 0 25px;
+     }
+     input, select, textarea{
+     width:100%;
+     padding:10px;
+     border-radius:8px;
+     border:none;
+     margin-top:1px;
+     margin-bottom:15px;
+     }
+     .btn{
+     padding:12px;
+     border:none;
+     border-radius:100%;
+     cursor:pointer;
+     font-weight:bold;
+     margin:5px;
+     transition:.3s
+     }
+     .primary{ background:#6366f1; color: white;}
+     .success{ background:#10b981; color:white;}
+     .danger{ background:#ef4444; color:white;}
+     .btn:hover{ transform:scale(1.05);}
+     .switch{
+     position:relative;
+     display:inline-block;
+     width:60px;
+     height:34px;
+     }
+     .switch input{ display:none;}
+     .slider{
+     position:absolute;
+     cursor:pointer;
+     inset:0;
+     background:#ccc;
+     border-radius:34px;
+     transition:.4s;
+     }
+     .slider:before{
+     content:"";
+     position:absolute;
+     height:26px; width:26px;
+     left:4px; bottom:4px;
+     background:white;
+     border-radius:50%;
+     transition:.4s;
+     }
+     input:checked+.slider{
+      background:#22c55e;
+     }
+     input:checked+.slider:before{
+     transform:translateX(26pX);
+     } 
    </style>
    
   </head>
