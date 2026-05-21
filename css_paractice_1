@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiny CSS Task</title>
+  <style>
+    *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+    }
+    body{
+     font-family: Arial, sans-serif;
+     background: #eef6ff;
+     line-height: 1.5;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    }
+    .card{
+     background: lightblue;
+     padding: 65px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 50px;
+     color: green;
+     width: 500px;
+     height: 300px;
+    
+     
+    }
+    h2{
+     margin: 15px;
+    }
+    p{
+     margin-bottom: 25px;
+    }
+    button{
+     background: green;
+     color: white;
+     padding: 10px;
+     border-radius: 15px;
+    
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Hello, I'm a Card</h2>
+    <p>This is a small box. Make me look nice!</p>
+    <button>Click Me</button>
+  </div>
+</body>
+</html>
