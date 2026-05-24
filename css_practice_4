@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Practice</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width:900px;
+}
+
+h1 {
+    color: #1e40af;
+    margin-bottom: 19px;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #475569;
+    font-size: 1.1rem;
+    margin:0 0 40px;
+    max-width: 600px;
+    
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e40af;
+    transition: 0.3s;
+    max-width: 600px;
+    overflow: auto;
+    min-width: 250px;
+    width: 100%;
+} 
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Page</h1>
+    
+    <p>This website should look good on mobile, tablet, and desktop.</p>
+    
+    <div class="cards">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+    </div>
+  </div>
+</body>
+</html>
