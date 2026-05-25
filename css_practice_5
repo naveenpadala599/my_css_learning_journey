@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descendant Selector Exploration</title>
+
+  <style>
+   body{
+    font-family: Arial, sans-serif;
+    padding: 24px;
+    line-height: 1.6;
+    background: #f5f5f5;
+    }
+    h1{
+    margin-bottom: 10px;   
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Descendant Selector Exploration</h1>
+
+  <p>
+    The descendant selector uses a <strong>space</strong>.
+    Example: <code>.box p</code>
+  </p>
+
+  <!-- =====================================================
+       1. BASIC EXAMPLE
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">1. Basic Descendant Selector</span>
+
+    <div class="box">
+      <p>I am inside .box, so I become red.</p>
+    </div>
+
+    <p>I am outside .box, so I do not become red.</p>
+  </section>
+
+  <!-- =====================================================
+       2. ANY DEPTH
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">2. Works at Any Depth</span>
+
+    <div class="deep-box">
+      <section>
+        <article>
+          <p>
+            This paragraph contains a
+            <span>span deeply inside .deep-box</span>.
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <span>I am outside .deep-box, so I am not highlighted.</span>
+  </section>
+
+  <!-- =====================================================
+       3. DESCENDANT VS CHILD SELECTOR
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">3. Descendant vs Child Selector</span>
+
+    <div class="parent">
+      <p>I am a direct child of .parent.</p>
+
+      <div>
+        <p>I am nested deeper inside .parent.</p>
+      </div>
+
+      <section>
+        <article>
+          <p>I am very deeply nested inside .parent.</p>
+        </article>
+      </section>
+    </div>
+
+    <p>
+      Green = selected by <code>.parent p</code><br>
+      Blue border = selected by <code>.parent > p</code>
+    </p>
+  </section>
+
+  <!-- =====================================================
+       4. COMPONENT SCOPING
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">4. Component Scoping</span>
+
+    <div class="card">
+      <h2>Card Title</h2>
+      <p>This paragraph is inside .card.</p>
+      <button>Card Button</button>
+    </div>
+
+    <h2>Normal Title Outside Card</h2>
+    <p>Normal paragraph outside card.</p>
+    <button>Normal Button Outside Card</button>
+  </section>
+
+  <!-- =====================================================
+       5. NAVBAR EXAMPLE
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">5. Real Navbar Example</span>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p>
+      The CSS <code>.navbar a</code> selects all links inside the navbar,
+      even though the links are inside <code>ul</code> and <code>li</code>.
+    </p>
+
+    <a href="#">Outside Link</a>
+  </section>
+
+  <!-- =====================================================
+       6. MULTIPLE LEVEL SELECTOR
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">6. Multiple Level Descendant Selector</span>
+
+    <div class="page">
+      <div class="article">
+        <p>
+          This is an article with a
+          <strong>very important word</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="article">
+      <p>
+        This <strong>strong text</strong> is inside .article,
+        but not inside .page.
+      </p>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       7. TOO BROAD SELECTOR WARNING
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">7. Too Broad Selector Warning</span>
+
+    <div>
+      <p>This has an <em>emphasized word</em> inside a div.</p>
+    </div>
+
+    <div>
+      <section>
+        <p>This also has an <em>emphasized word</em> deeply inside a div.</p>
+      </section>
+    </div>
+
+    <p>
+      Because of <code>div em</code>, many <code>em</code> elements become styled.
+      This is why broad selectors can be dangerous.
+    </p>
+  </section>
+
+  <!-- =====================================================
+       8. YOUR EXPERIMENT AREA
+       ===================================================== -->
+
+  <section class="section">
+    <span class="label">8. Your Experiment Area</span>
+
+    <div class="experiment">
+      <p>Try styling me using .experiment p</p>
+
+      <div>
+        <p>Try styling me too. I am nested deeper.</p>
+      </div>
+
+      <section>
+        <article>
+          <p>Try styling me also. I am very deep.</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Try adding this CSS above:
+
+      .experiment p {
+        color: blue;
+        background: lightgreen;
+        padding: 8px;
+      }
+
+      Then try:
+
+      .experiment > p {
+        border: 3px solid black;
+      }
+
+    -->
+  </section>
+
+</body>
+</html>
