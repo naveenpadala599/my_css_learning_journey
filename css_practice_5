@@ -15,6 +15,37 @@
     h1{
     margin-bottom: 10px;   
     }
+    .section{
+     background: white;
+     border: 2px solid #ddd
+     padding: 20px;
+     margin-bottom: 24px;
+     border-radius: 12px;
+    }
+    .label{
+     font-weight: bold;
+     background: #222;
+     color: white;
+     padding: 4px 8px;
+     border-radius: 6px;
+     display: inline-block;
+     margin-bottom: 10px;
+    }
+    .box p{
+     color: red;
+     font-weight: bold;
+    }
+    .deep-box span{
+     background: yellow;
+     padding: 3px 6px;
+    }
+    .parent p{
+     color: green;
+    }
+    .parent > p{
+     border: 3px solid blue;
+     padding: 8px;
+    }
     
   </style>
 </head>
