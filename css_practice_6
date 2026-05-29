@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adjacent + Attribute Selector Exploration</title>
+
+<style>
+  h1+p{
+    color: red;
+    font-weight: bold;
+    }
+  h2+p+p{
+    background-color: yellow;
+  }
+  .note+.warning{
+    border: 2px solid orange;
+    padding: 8px;
+  }
+  input+.error{
+    color: red;
+    font-size: 14px;
+  }
+  img+p{
+    color: purple;
+  }
+
+</style>
+</head>
+
+<body>
+
+<h1>Adjacent + Attribute Selector Exploration</h1>
+<p>This paragraph is red because of <code>h1 + p</code>.</p>
+<p>This paragraph is normal because it is not immediately after h1.</p>
+
+<div class="box">
+    <h2>Chained Adjacent Selector</h2>
+    <p>Paragraph 1 after h2.</p>
+    <p>This is selected by <code>h2 + p + p</code>.</p>
+    <p>This is not selected.</p>
+</div>
+
+<div class="box">
+    <p class="note">This is a note.</p>
+    <p class="warning">This warning is immediately after note, so selected.</p>
+
+    <p class="note">Another note.</p>
+    <span>This span breaks the chain.</span>
+    <p class="warning">This warning is NOT selected.</p>
+</div>
+
+<div class="box">
+    <h2>Form Error Example</h2>
+
+    <input type="text" placeholder="Username">
+    <p class="error">Username error selected by input + .error</p>
+
+    <input type="text" placeholder="Another input">
+    <div>Something in between</div>
+    <p class="error">This error is NOT selected.</p>
+</div>
+
+<div class="box">
+    <h2>Checkbox + Label</h2>
+
+    <input type="checkbox" id="agree">
+    <label for="agree">Check me and I turn green</label>
+</div>
+
+<div class="box">
+    <h2>Radio + Label</h2>
+
+    <input type="radio" name="level" id="beginner">
+    <label for="beginner">Beginner</label>
+
+    <br>
+
+    <input type="radio" name="level" id="advanced">
+    <label for="advanced">Advanced</label>
+</div>
+
+<div class="box">
+    <h2>Attribute Exists</h2>
+
+    <a href="https://example.com">I have href</a><br>
+    <a>I do not have href</a>
+</div>
+
+<div class="box">
+    <h2>Exact Attribute Match</h2>
+
+    <input type="text" placeholder="Selected text input">
+    <input type="password" placeholder="Not selected password input">
+    <input type="email" placeholder="Email input">
+</div>
+
+<div class="box">
+    <h2>Starts With, Ends With, Contains</h2>
+
+    <a href="https://google.com">HTTPS Google link</a><br>
+    <a href="http://example.com">HTTP Example link</a><br>
+    <a href="notes.pdf">PDF link</a><br>
+    <a href="my-google-notes.html">Contains google</a>
+</div>
+
+<div class="box">
+    <h2>Whole Word Match</h2>
+
+    <p title="very important message">
+        Selected because title contains whole word "important".
+    </p>
+
+    <p title="very-important-message">
+        Not selected by title~="important" because it is not a space-separated word.
+    </p>
+</div>
+
+<div class="box">
+    <h2>Hyphen Match</h2>
+
+    <p lang="en">Selected: lang="en"</p>
+    <p lang="en-US">Selected: lang="en-US"</p>
+    <p lang="fr">Not selected: lang="fr"</p>
+</div>
+
+<div class="box">
+    <h2>Multiple Attributes</h2>
+
+    <input type="email" required placeholder="Selected email required">
+    <input type="email" placeholder="Not selected">
+    <input type="text" required placeholder="Not selected">
+</div>
+
+<div class="box">
+    <h2>data-* Attribute</h2>
+
+    <button data-role="admin">Admin Button</button>
+    <button data-role="user">User Button</button>
+</div>
+
+<div class="box">
+    <h2>Attribute + Adjacent Together</h2>
+
+    <input required placeholder="Required field">
+    <p class="hint">Selected because it comes immediately after required input.</p>
+
+    <input required placeholder="Required field again">
+    <span>Breaks adjacency</span>
+    <p class="hint">Not selected because span is between input and hint.</p>
+</div>
+
+<div class="box">
+    <h2>Disabled Input + Button</h2>
+
+    <input disabled placeholder="Disabled input">
+    <button>This button is selected by input[disabled] + button</button>
+</div>
+
+<div class="box">
+    <h2>Data State</h2>
+
+    <div data-state="active">Active box selected</div>
+    <div data-state="inactive">Inactive box not selected</div>
+</div>
+
+<div class="box">
+    <h2>Attribute Word + Adjacent</h2>
+
+    <div title="special card">This div has title special.</div>
+    <p>This paragraph is selected because it comes after title~="special".</p>
+
+    <div title="special card">This div has title special.</div>
+    <span>Break</span>
+    <p>This paragraph is not selected.</p>
+</div>
+
+</body>
+</html>
