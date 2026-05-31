@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stretch Practice</title>
+
+    <style>
+      .container{
+       display: flex;
+       height: 300px;
+       border: 3px solid black;
+       justify-content: space-evenly;
+       align-items: flex-start;
+       align-items: stretch;
+      }
+      .item{
+       border: 1px solid red;
+      }
+    </style>
+</head>
+<body>
+
+    <h1>Stretch Practice</h1>
+
+    <section class="container">
+        <div class="item item1">Small</div>
+        <div class="item item2">Medium text</div>
+        <div class="item item3">BIG BIG BIG TEXT</div>
+    </section>
+
+</body>
+</html>
