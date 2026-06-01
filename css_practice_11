@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Display and Positioning Lab</title>
+
+  <style>
+    .container {
+      border: 3px solid black;
+      display: flex;
+    }
+
+    .box {
+      border: 2px solid red;
+      padding: 20px;
+      width: 200px;
+      height: 100px;
+    }
+
+    .outer {
+      border: 3px solid purple;
+      padding: 20px;
+      margin-top: 30px;
+      /*position: relative;*/
+      height: 10000px;
+    }
+
+    .inner {
+      border: 2px solid green;
+      position: sticky;
+      top: 0;
+    }
+
+    .test-box {
+      border: 2px solid blue;
+    }
+    .spacer{
+      height: 2000px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Display and Positioning Lab</h1>
+
+  <section class="container">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+  </section>
+
+  <p class="text">
+    This is normal text with 
+    <span class="inline-box">inline span</span>
+    inside it.
+  </p>
+
+  <div class="outer">
+    Outer
+    <div class="inner">Inner</div>
+    <div class="test-box">TEST BOX</div>
+  </div>
+
+  <div class="fixed-box">Fixed Box</div>
+
+  <div class="spacer"></div>
+
+</body>
+</html>
