@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flex Items Lab</title>
+
+  <style>
+    .container {
+      display: flex;
+      border: 4px solid black;
+      height: 300px;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      border: 2px solid red;
+      padding: 20px;
+      background: lightblue;
+    }
+
+    .item1 {
+      flex-grow: 1;
+    }
+
+    .item2 {
+      flex-grow: 2;  
+    }
+
+    .item3 {
+      flex-grow: 1;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flex Items Lab</h1>
+
+  <section class="container">
+    <div class="item item1">Item 1</div>
+    <div class="item item2">Item 2 has more text</div>
+    <div class="item item3">Item 3</div>
+  </section>
+
+</body>
+</html>
