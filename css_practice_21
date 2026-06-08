@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box{
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    transition: all 10s linear;
+}
+  .box1{
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    transition: all 10s;
+}
+
+.box:hover{
+    background: orange;
+    width: 300px;
+}
+  .box1:hover{
+    background: orange;
+    width: 300px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+<div class="box1"></div>
+
+</body>
+</html>
