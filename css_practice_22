@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box{
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    transition: all 10s linear;
+}
+
+.box1{
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    transition: all 0.3s ease;
+}
+
+.box:hover{
+    background: orange;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.box1:hover{
+    background: orange;
+    width: 300px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Transition Lab</h1>
+
+<h2>Linear</h2>
+<div class="box"></div>
+
+<br>
+
+<h2>Ease (Default)</h2>
+<div class="box1"></div>
+
+</body>
+</html>
