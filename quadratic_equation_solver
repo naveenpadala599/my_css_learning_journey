@@ -1,0 +1,18 @@
+let root1, root2;
+let a = prompt("Enter the first number: ");
+let b = prompt("Enter the second number: ");
+let c = prompt("Enter the third number: ");
+let discriminent = b*b - (4*a*c);
+if (discriminent>0){
+    root1 = (-b + Math.sqrt(discriminent))/(2*a);
+    root2 = (-b - Math.sqrt(discriminent))/(2*a);
+    console.log(`The roots of the quadratic equation ${a}x**2+${b}x+${c} is ${root1} and ${root2}`);
+}
+else if(discriminent == 0){
+    root1 = -b/(2*a);
+    root2 = -b/(2*a);
+    console.log(`The roots of the quadratic equation ${a}x**2+${b}x+${c} is ${root1} and ${root2}`);
+}
+else{
+    console.log(`${a}x**2+${b}x+${c} does not have real roots `);
+}
